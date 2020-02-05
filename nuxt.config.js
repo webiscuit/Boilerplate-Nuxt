@@ -1,5 +1,4 @@
-import imageminMozjpeg from 'imagemin-mozjpeg';
-import imageminWebp from 'imagemin-webp';
+require('dotenv').config();
 
 export default {
   mode: 'universal',
@@ -59,15 +58,13 @@ export default {
   */
   modules: [
     // Doc: https://github.com/nuxt-community/dotenv-module
-    ["nuxt-imagemin", {
-      optipng: { optimizationLevel: 3 },
-      plugins: [
-        imageminMozjpeg( {quality: '80'} ),
-        imageminWebp({ quality: '80', progressive: true })
-      ]
-    }],
+    '@bazzite/nuxt-optimized-images',
     '@nuxtjs/dotenv',
   ],
+  optimizedImages: {
+    optimizeImages: true,
+    imagesName: ({ isDev }) => isDev ? '[path][name][hash:optimized].[ext]' : 'img/[folder]/[name].[ext]'
+  },
 
   /*
     ** Source Directory
@@ -116,7 +113,7 @@ export default {
     */
     extend (config, { isDev, isClient }) {
       if (!isDev) {
-        // config.output.publicPath = './assets/'
+        config.output.publicPath = './assets/'
       }
       return config;
     }

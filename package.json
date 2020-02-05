@@ -18,10 +18,9 @@
     "@nuxtjs/dotenv": "^1.4.0"
   },
   "devDependencies": {
+    "@bazzite/nuxt-optimized-images": "^0.3.0",
     "@nuxtjs/tailwindcss": "^1.0.0",
     "imagemin-mozjpeg": "^8.0.0",
-    "imagemin-webp": "^5.1.0",
-    "nuxt-imagemin": "^1.0.0",
     "postcss-calc": "^7.0.1",
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.2.1",
