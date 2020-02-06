@@ -1,14 +1,7 @@
 # boilerplate-nuxt
 
-> Boilerplate for static && Wordpress website  
-> 静的サイトとWordPress用assetsデプロイの共存テンプレート
-
-Use **Nuxt** for static pages, **webpack** for wordpress assets  
-Use **Local by Flywheel** for local wordpress development
-
-静的サイト生成には **Nuxt** を採用、  
-Wordpressのassets用には **webpack**を使用（WP時はimg,css,js等のみ書き出し）  
-WP環境の構築は **Local by Flywheel** の使用を想定  
+> Boilerplate for static
+> 静的サイト  
 
 ## Build Setup
 
@@ -23,14 +16,6 @@ $ npm run dev
 # generate static project
 # 静的サイトの生成（納品ファイル用に画像、CSSファイル等圧縮あり）
 $ npm run generate
-
-# Deply files for Wordpress with watch (unminified)
-# Wordpress用アセット書き出し（自動コンパイル、上記静的版のrun devのWPアセット版）
-$ npm run wp:dev
-
-# Generate minified files for WordPress
-# Wordpress用アセット書き出し（圧縮済み、watchなし、上記run generateのWPアセット版）
-$ npm run wp:build
 ```
 
 ## Directories
