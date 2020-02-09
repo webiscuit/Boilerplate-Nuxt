@@ -2,8 +2,12 @@
   "name": "nuxt",
   "version": "1.0.0",
   "description": "My hunky-dory Nuxt.js project",
-  "author": "Hiromi Kozai",
+  "author": "Hiromi Kozai <dev@webiscuit.jp> (https://webiscuit.jp)",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/webiscuit/boilerplate"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -21,6 +25,7 @@
     "@bazzite/nuxt-optimized-images": "^0.3.0",
     "@nuxtjs/tailwindcss": "^1.0.0",
     "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^8.0.0",
     "postcss-calc": "^7.0.1",
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.2.1",

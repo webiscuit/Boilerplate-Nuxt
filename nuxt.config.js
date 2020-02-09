@@ -23,7 +23,8 @@ export default {
       { hid: 'og:image', property: 'og:image', content: process.env.DEF_OGIMAGE },
     ],
     link: [
-      // { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700&display=swap&subset=japanese' },
+      { rel: 'stylesheet', href: '//cdn.jsdelivr.net/npm/yakuhanjp@3.3.1/dist/css/yakuhanjp.min.css' }
     ]
   },
   /*
@@ -40,6 +41,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '@/plugins/ui'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -95,12 +97,16 @@ export default {
           features: {
             'nesting-rules': false
           },
-          // importFrom: {
-          //   customMedia: {
-          //     '--pc': '(min-width: 768px)',
-          //     '--sp': '(max-width: 767px)'
-          //   }
-          // }
+          importFrom: {
+            customMedia: {
+              '--sm': '(min-width: 640px)',
+              '--md': '(min-width: 768px)',
+              '--lg': '(min-width: 1024px)',
+              '--xl': '(min-width: 1280px)',
+              '--pc': '(min-width: 768px)',
+              '--sp': '(max-width: 767px)'
+            }
+          }
         },
         'postcss-short': {},
         'postcss-calc': {},
@@ -112,10 +118,17 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, { isDev, isClient }) {
-      if (!isDev) {
-        config.output.publicPath = './assets/'
-      }
-      return config;
+      // if (!isDev) {
+      //   config.output.publicPath = './assets/'
+      // }
+      // return config;
     }
-  }
+  },
+
+  // router: {
+  //   base: process.env.NODE_ENV === 'production' ? '' : ''
+  // },
+  // generate: {
+  //   dir: 'dist/'
+  // }
 }

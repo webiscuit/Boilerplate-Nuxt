@@ -2,36 +2,15 @@
 /*!
 Theme Name: Sample
 Author: Hiromi Kozai
-Author URI: https://codepen.io/hiromir13/
+Author URI: https://webiscuit.jp
 Version: 1.0
 */
 
 /*୨୧┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈୨୧
   Settings
   ୨୧┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈୨୧*/
-@import "./settings/font.css";
-@import "./settings/variables.css";
-@import "./settings/breakpoint.css";
 
 /*୨୧┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈୨୧
   Foundation
   ୨୧┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈୨୧*/
-@import "./foundation/base.css";
-
-/*୨୧┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈୨୧
-  Layout
-  ୨୧┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈୨୧*/
-/* @import "./layout/header.css";
-@import "./layout/main.css";
-@import "./layout/footer.css"; */
-
-/*୨୧┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈୨୧
-  Component
-  ୨୧┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈୨୧*/
-/* @import "./component/button.css";
-@import "./component/container.css";
-@import "./component/section.css";
-@import "./component/heading.css";
-@import "./component/list.css";
-@import "./component/nav.css";
-@import "./component/jumbotron.css"; */
+@import "./base.css";
